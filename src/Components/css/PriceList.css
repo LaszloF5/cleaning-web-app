@@ -1,0 +1,79 @@
+:root {
+    --main-blue-color: rgb(7, 138, 237);
+    --main-text-color: rgb(245, 245, 245);
+  }
+
+.third-container {
+    position: relative;
+  height: 100vh;
+  background-color: rgb(42, 53, 75);
+  color: whitesmoke;
+}
+
+.price-container {
+  width: 90vw;
+  height: 100%;
+  outline: 3px solid whitesmoke;
+  margin: 0 auto;
+  /* padding-top: 100px; */
+}
+
+.price-container_h2 {
+    padding: 30px 0;
+}
+
+.services-table {
+  width: 50%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-left: 30px;
+}
+
+.services-table_head {
+  background-color: #f4f4f4;
+}
+
+.services-table_row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.services-table_cell {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+.services-table_header {
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.other-option-container {
+    position: absolute;
+    bottom: 150px;
+    right: calc(10vw + 30px);
+}
+
+.other-option-p {
+    white-space: pre-line;
+    font-size: 30px;
+    margin: 0;
+}
+
+.other-option-p_lastword {
+    color: var(--main-blue-color)
+}
+
+/* .price-list-contact-button {
+    background-color: var(--main-blue-color);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color: var(--main-text-color);
+  } */
