@@ -1,12 +1,14 @@
 :root {
   --main-blue-color: rgb(7,138,237);
   --main-text-color: rgb(245, 245, 245);
+  --odd-page-bg-color: rgb(42,53,75);
 }
 
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .App {
@@ -50,7 +52,7 @@ html {
 }
 
 .first-container_inside_box {
-  background-color: rgb(42,53,75);
+  background-color: var(--odd-page-bg-color);
   width: 50vw;
   height: 95vh;
   display: flex;

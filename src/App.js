@@ -1,6 +1,8 @@
 import React from "react";
 import Services from "./Components/Services";
 import PriceList from "./Components/PriceList";
+import AboutUs from "./Components/AboutUs";
+import Contact from "./Components/Contact";
 import "./App.css";
 
 export default function App() {
@@ -11,24 +13,23 @@ export default function App() {
         <nav>
           <ul className="nav-ul">
             <li>
-              <a href="#home">Logo place</a>
+              <a href="#Home">Logo place</a>
             </li>
             <li>
-              <a href="#home">Home</a>
+              <a href="#Home">Home</a>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <a href="#Services">Services</a>
             </li>
             <li>
-              <a href="#services">Price list</a>
+              <a href="#PriceList">Price list</a>
             </li>
             <li>
-              <a href="#contact">About us</a>
+              <a href="#AboutUs">About us</a>
             </li>
             <li>
-              <a href="#services">Contact</a>
+              <a href="#Contact">Contact</a>
             </li>
-            {/* <span>Light/Dark toggle</span> */}
           </ul>
         </nav>
       </header>
@@ -43,8 +44,18 @@ export default function App() {
         </div>
         <div className="img-container"></div>
       </div>
+      <div id='Services'>
       <Services/>
+      </div>
+      <div id='PriceList'>
       <PriceList/>
+      </div>
+      <div id='AboutUs'>
+        <AboutUs/>
+      </div>
+      <div id='Contact'>
+        <Contact/>
+      </div>
     </div>
   );
 }
