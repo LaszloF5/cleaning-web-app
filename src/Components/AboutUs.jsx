@@ -3,21 +3,7 @@ import "../Components/css/AboutUs.css";
 
 export default function AboutUs() {
   const [imgs, setImgs] = React.useState([]);
-
-  //   const getImgs = async () => {
-  //     setImgs([]);
-  //     const fetchURL = "https://randomuser.me/api/?results=3&nat=DE";
-  //     try {
-  //       const response = await fetch(fetchURL);
-  //       const data = await response.json();
-  //       const { results } = data;
-  //       const newImgs = results.map((person) => person.picture.medium);
-  //       setImgs(newImgs);
-  //     } catch (error) {
-  //       console.error("Error fetching data", error);
-  //     }
-  //   };
-
+  
   const getImgs = async () => {
     setImgs([]);
     const fetchUrl = "https://randomuser.me/api/?results=3&nat=DE";

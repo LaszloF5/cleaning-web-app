@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Services from "./Components/Services";
 import PriceList from "./Components/PriceList";
 import AboutUs from "./Components/AboutUs";
@@ -7,8 +7,40 @@ import "./App.css";
 
 export default function App() {
   const mainText = `We're here to \nassist your \nhome `;
+  const [showArrow, setShowArrow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowArrow(true);
+      } else {
+        setShowArrow(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <div className="App">
+    <div className="App" id="Home">
+      {showArrow && (
+        <img
+          className="top-arrow"
+          src="./top-arrow.png"
+          alt="top arrow"
+          onClick={scrollToTop}
+        />
+      )}
       <header className="App-header">
         <nav>
           <ul className="nav-ul">
@@ -44,17 +76,17 @@ export default function App() {
         </div>
         <div className="img-container"></div>
       </div>
-      <div id='Services'>
-      <Services/>
+      <div id="Services">
+        <Services />
       </div>
-      <div id='PriceList'>
-      <PriceList/>
+      <div id="PriceList">
+        <PriceList />
       </div>
-      <div id='AboutUs'>
-        <AboutUs/>
+      <div id="AboutUs">
+        <AboutUs />
       </div>
-      <div id='Contact'>
-        <Contact/>
+      <div id="Contact">
+        <Contact />
       </div>
     </div>
   );

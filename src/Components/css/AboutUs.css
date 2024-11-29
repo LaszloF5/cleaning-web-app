@@ -11,14 +11,16 @@
 .about-us-container {
     width: 90vw;
     height: 100%;
-    outline: 3px solid black;
+    /* outline: 3px solid black; */
     margin: 0 auto;
 }
 
 .about-us-mainText {
     margin-top: 0;
-    padding-top: 40px;
+    padding: 5vh 0;
     font-size: 30px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .about-us-mainText-lastword {
@@ -29,7 +31,7 @@
     outline: 3px solid black;
     width: 50%;
     display: flex;
-    margin: 50px 0 0 30px;
+    margin-left:30px;
 }
 
 .us_img, .us_p {

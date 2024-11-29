@@ -2,12 +2,15 @@
   --main-blue-color: rgb(7, 138, 237);
   --main-text-color: rgb(245, 245, 245);
 }
+.kesobbModositaniAStrukturat {
+  background-color: var(--main-text-color);
+}
 
 .second-container {
   height: 100vh;
   width: 90vw;
   background-color: var(--main-text-color);
-  outline: 3px solid black;
+  /* outline: 3px solid black; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -27,41 +30,40 @@
 }
 
 .services-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    justify-content: center;
-    padding: 16px;
-  }
-  
-  .services-container_items {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 200px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    /* text-align: center; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
-  
-  .services-container_items img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-  }
-  
-  .services-container_items p {
-    margin: 12px 0;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .services-container_items span {
-    font-weight: bold;
-    font-size: 16px;
-    color: #333;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  padding: 16px;
+}
+
+.services-container_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  /* text-align: center; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.services-container_items img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.services-container_items p {
+  margin: 12px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.services-container_items span {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
