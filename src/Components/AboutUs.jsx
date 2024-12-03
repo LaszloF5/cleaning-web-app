@@ -1,25 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import "../Components/css/AboutUs.css";
 
 export default function AboutUs() {
-  const [imgs, setImgs] = React.useState([]);
+  const [imgs, setImgs] = useState([]);
   
   const getImgs = async () => {
     setImgs([]);
     const fetchUrl = "https://randomuser.me/api/?results=3&nat=DE";
-    try {
+    try{
       const response = await fetch(fetchUrl);
       const data = await response.json();
-      const { results } = data;
+      const {results} = data;
       const newImgs = results.map((person) => ({
         img: person.picture.large,
         name: `${person.name.first} ${person.name.last}`
-      }));
+      }))
       setImgs(newImgs);
-    } catch (error) {
+    } catch (error){
       console.error("Error fetching data", error);
     }
-  };
+  }
 
   return (
     <div className="fourth-container">

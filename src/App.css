@@ -31,8 +31,6 @@ html {
   opacity: 1;
 }
 
-
-
 .App-header {
   position: fixed;
   width: 100%;
@@ -58,12 +56,24 @@ html {
 .nav-ul li a {
   color: var(--main-text-color);
   text-decoration: none;
+  border-width: 0;
+  position: relative;
 }
 
-.nav-ul li a:hover {
-  border-bottom: 3px solid var(--main-blue-color)
+.nav-ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--main-blue-color);
+  transition: width 0.3s ease-in-out;
 }
 
+.nav-ul li a:hover::after {
+  width: 100%;
+}
 
 /*****FIRST BLOCK*****/
 
