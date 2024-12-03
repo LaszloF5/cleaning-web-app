@@ -45,7 +45,7 @@ export default function App() {
         <nav>
           <ul className="nav-ul">
             <li>
-              <a href="#Home">Logo place</a>
+              <a href="#Home"><img className="logo" src={process.env.PUBLIC_URL + './cleaner-logo.png'} alt="cleaner-logo"/></a>
             </li>
             <li>
               <a href="#Home">Home</a>
