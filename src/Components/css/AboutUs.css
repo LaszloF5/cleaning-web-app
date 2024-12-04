@@ -9,86 +9,156 @@
 }
 
 .about-us-container {
-    width: 90vw;
-    height: 100%;
-    /* outline: 3px solid black; */
-    margin: 0 auto;
+  width: 90vw;
+  height: 100%;
+  /* outline: 3px solid black; */
+  margin: 0 auto;
 }
 
 .about-us-mainText {
-    margin-top: 0;
-    padding: 5vh 0;
-    font-size: 30px;
-    margin-block-start: 0;
-    margin-block-end: 0;
+  margin-top: 0;
+  padding: 5vh 0;
+  font-size: 30px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .about-us-mainText-lastword {
-    color: var(--main-blue-color);
+  color: var(--main-blue-color);
 }
 
 .us {
-    outline: 3px solid black;
-    width: 50%;
-    display: flex;
-    margin-left:30px;
+  outline: 3px solid black;
+  width: 50%;
+  display: flex;
+  margin-left: 30px;
+  border-radius: 8px;
 }
 
-.us_img, .us_p {
-    width: 50%;
+.us_img,
+.us_p {
+  width: 50%;
+  margin: auto 0;
+}
+
+.us_img {
+  height: 75%;
+  border-radius: 8px;
 }
 
 .us_p {
-    padding: 10px;
+  padding: 10px;
 }
 
 .theySaid-container {
-    height: 520px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
 }
 
 .theySaid-container_h3 {
-    font-size: 25px;
+  font-size: 25px;
+  margin: 0;
+}
+
+.theySaid-container {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
 }
 
 .theySaid-users-container {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
 }
 
 .theySaid-users {
-    border: 3px solid #333; /* Fekete helyett sötétszürke */
-    border-radius: 8px; /* Lágyabb sarkok a dizájnhoz */
-    width: 330px;
-    padding: 16px;
-    background-color: #f9f9f9; /* Világos háttérszín a tartalom kiemeléséhez */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Árnyék hozzáadása */
-    margin: 16px auto; /* Középre igazítás */
-    text-align: center; /* Tartalom középre igazítása */
+  border: 3px solid #333;
+  border-radius: 8px;
+  width: 300px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px auto;
+  text-align: center;
+}
+
+.theySaid-users_img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 8px auto;
+  display: block;
+  border: 2px solid #ddd;
+}
+
+.theySaid-users_name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 12px 0 4px;
+}
+
+.theySaid-users_feedback {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1100px) {
+  .theySaid-users {
+    width: 250px;
   }
-  
-  .theySaid-users_img {
-    border-radius: 50%; /* Tökéletes kör alak */
-    width: 100px; /* Fix szélesség a következetesség érdekében */
-    height: 100px; /* Fix magasság a következetesség érdekében */
-    object-fit: cover; /* A képek arányának megtartása */
-    margin: 8px auto; /* Középre igazítás és kis távolság */
-    display: block;
-    border: 2px solid #ddd; /* Finom keret a képek körül */
+}
+
+@media screen and (max-width: 900px) {
+  .us {
+    width: 90%;
+    padding: 8px;
+    margin: 20px auto;
   }
-  
-  .theySaid-users_name {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin: 12px 0 4px;
+
+  .theySaid-users-container {
+    flex-wrap: wrap;
   }
-  
-  .theySaid-users_feedback {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.5;
+  .fourth-container {
+    height: auto;
   }
-  
+
+  .about-us-container {
+    height: auto;
+  }
+
+  .theySaid-container {
+    height: auto;
+  }
+
+  .theySaid-users {
+    width: 90%;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .us {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .us_img,
+  .us_p {
+    width: 100%;
+    padding: 0;
+  }
+
+  .us-p {
+    margin: 10px;
+  }
+}

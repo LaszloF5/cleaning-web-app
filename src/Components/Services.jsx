@@ -14,9 +14,7 @@ export default function Services() {
             <img src="" alt="img location" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates sed accusantium omnis excepturi nihil dolores esse
-              ducimus quod. Odio minima delectus, eius rem tempore officiis nam
-              optio dolore error praesentium?
+              Voluptates sed accusantium omnis excepturi nihil dolores esse.
             </p>
             <span>service name 1</span>
           </div>
@@ -24,9 +22,7 @@ export default function Services() {
             <img src="" alt="img location" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates sed accusantium omnis excepturi nihil dolores esse
-              ducimus quod. Odio minima delectus, eius rem tempore officiis nam
-              optio dolore error praesentium?
+              Voluptates sed accusantium omnis excepturi nihil dolores esse.
             </p>
             <span>service name 2</span>
           </div>
@@ -34,9 +30,7 @@ export default function Services() {
             <img src="" alt="img location" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates sed accusantium omnis excepturi nihil dolores esse
-              ducimus quod. Odio minima delectus, eius rem tempore officiis nam
-              optio dolore error praesentium?
+              Voluptates sed accusantium omnis excepturi nihil dolores esse.
             </p>
             <span>service name 3</span>
           </div>
@@ -44,9 +38,7 @@ export default function Services() {
             <img src="" alt="img location" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates sed accusantium omnis excepturi nihil dolores esse
-              ducimus quod. Odio minima delectus, eius rem tempore officiis nam
-              optio dolore error praesentium?
+              Voluptates sed accusantium omnis excepturi nihil dolores esse.
             </p>
             <span>service name 4</span>
           </div>
@@ -54,9 +46,7 @@ export default function Services() {
             <img src="" alt="img location" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates sed accusantium omnis excepturi nihil dolores esse
-              ducimus quod. Odio minima delectus, eius rem tempore officiis nam
-              optio dolore error praesentium?
+              Voluptates sed accusantium omnis excepturi nihil dolores esse.
             </p>
             <span>service name 5</span>
           </div>
@@ -64,9 +54,7 @@ export default function Services() {
             <img src="" alt="img place" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates sed accusantium omnis excepturi nihil dolores esse
-              ducimus quod. Odio minima delectus, eius rem tempore officiis nam
-              optio dolore error praesentium?
+              Voluptates sed accusantium omnis excepturi nihil dolores esse.
             </p>
             <span>service name 6</span>
           </div>

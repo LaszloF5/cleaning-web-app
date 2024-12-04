@@ -1,11 +1,11 @@
 :root {
-    --main-blue-color: rgb(7, 138, 237);
-    --main-text-color: rgb(245, 245, 245);
-    --odd-page-bg-color: rgb(42,53,75);
-  }
+  --main-blue-color: rgb(7, 138, 237);
+  --main-text-color: rgb(245, 245, 245);
+  --odd-page-bg-color: rgb(42, 53, 75);
+}
 
 .third-container {
-    position: relative;
+  position: relative;
   height: 100vh;
   background-color: var(--odd-page-bg-color);
   color: whitesmoke;
@@ -20,9 +20,9 @@
 }
 
 .price-container_h2 {
-    padding: 5vh 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
+  padding: 25px 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .services-table {
@@ -57,19 +57,19 @@
 }
 
 .other-option-container {
-    position: absolute;
-    bottom: 150px;
-    right: calc(10vw + 30px);
+  position: absolute;
+  bottom: 50px;
+  right: calc(10vw + 30px);
 }
 
 .other-option-p {
-    white-space: pre-line;
-    font-size: 30px;
-    margin: 0;
+  white-space: pre-line;
+  font-size: 30px;
+  margin: 0;
 }
 
 .other-option-p_lastword {
-    color: var(--main-blue-color)
+  color: var(--main-blue-color);
 }
 
 /* .price-list-contact-button {
@@ -80,3 +80,15 @@
     cursor: pointer;
     color: var(--main-text-color);
   } */
+
+@media screen and (max-width: 992px) {
+  .services-table {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .services-table {
+    width: 80%;
+  }
+}

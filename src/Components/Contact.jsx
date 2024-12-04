@@ -22,7 +22,7 @@ export default function Contact() {
             +36 1 234 5678
             <img
               className="phone-icon"
-              src="./call.png"
+              src={`${process.env.PUBLIC_URL}/call.png`}
               alt="phone call icon"
             />
           </a>
