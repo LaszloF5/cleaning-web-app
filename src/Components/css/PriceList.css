@@ -26,11 +26,9 @@
 }
 
 .services-table {
-  width: 50%;
   border-collapse: collapse;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  margin-left: 30px;
 }
 
 .services-table_head {
@@ -56,10 +54,32 @@
   color: #555;
 }
 
+.name-cell {
+  width: 200px;
+}
+
+.service-price-cell {
+  width: 300px;
+}
+
+.service-price {
+  display: block;
+}
+
+.table-addition {
+  color: black;
+}
+
+.tfoot {
+  padding: 5px;
+  font-size: 14px;
+  font-style: italic;
+}
+
 .other-option-container {
   position: absolute;
   bottom: 50px;
-  right: calc(10vw + 30px);
+  right: calc(10vw);
 }
 
 .other-option-p {
@@ -87,8 +107,59 @@
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 700px) {
+  .other-option-container {
+    position: static;
+    margin: auto;
+  }
   .services-table {
-    width: 80%;
+    margin: 10px auto;
+  }
+
+  .third-container,
+  .price-container {
+    height: auto;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .name-cell {
+    width: 150px;
+  }
+
+  .service-price-cell {
+    width: 200px;
+  }
+}
+
+/* @media screen and (max-width: 700px) {
+  .third-container,
+  .price-container {
+    height: calc(100vh + 100px);
+  }
+  .services-table {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .third-container,
+  .price-container {
+    height: calc(100vh + 250px);
+  }
+
+  .name-cell {
+    width: 150px;
+  }
+
+  .service-price-cell {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .third-container,
+  .price-container {
+    height: calc(100vh + 300px);
+  }
+} */

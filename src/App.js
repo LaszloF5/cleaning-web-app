@@ -8,6 +8,10 @@ import "./App.css";
 export default function App() {
   const mainText = `We're here to \nassist your \nhome `;
   const [showArrow, setShowArrow] = useState(false);
+  const [setHam, isSetHam] = useState(false);
+  const [isVisibleHam, setIsVisibleHam] = useState(false);
+  const [isVisibleClose, setIsVisibleClose] = useState(false);
+  const [animationClass, setAnimationClass] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +28,7 @@ export default function App() {
     //////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////
-    ///////////////////////FREEPIKRE HIVATKOZNI/////////=/////////////
+    ///////////////////////FREEPIKRE HIVATKOZNI///////////////////////
     //////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////
@@ -45,8 +49,55 @@ export default function App() {
     });
   };
 
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      isSetHam(true);
+    } else {
+      isSetHam(false);
+    }
+  }, []);
+
+  const togglehamburger = () => {
+    if (isVisibleHam) {
+      setAnimationClass("slide-out");
+      setTimeout(() => {
+        setIsVisibleHam(false);
+        setIsVisibleClose(true);
+        isSetHam(false);
+        setAnimationClass("");
+      }, 500);
+    } else {
+      setAnimationClass("slide-in");
+        setIsVisibleHam(true);
+        isSetHam(true);
+        setIsVisibleClose(true);
+    }
+  };
+
+  const closeHamMenu = () => {
+    setIsVisibleHam(false);
+    setIsVisibleClose(false);
+    isSetHam(true);
+  };
+
   return (
     <div className="App" id="Home">
+      {setHam && (
+        <img
+          className="hamburger-icon"
+          src={`${process.env.PUBLIC_URL}/hamburger-menu.png`}
+          alt="hamburger menu icon"
+          onClick={togglehamburger}
+        />
+      )}
+      {isVisibleClose && (
+        <img
+          className="close-icon"
+          src={`${process.env.PUBLIC_URL}/close-icon.png`}
+          alt="close icon"
+          onClick={closeHamMenu}
+        />
+      )}
       {showArrow && (
         <img
           className="top-arrow"
@@ -55,7 +106,11 @@ export default function App() {
           onClick={scrollToTop}
         />
       )}
-      <header className="App-header">
+      <header
+        className={`App-header ${
+          isVisibleHam ? `hamburger-header ${animationClass}` : ""
+        }`}
+      >
         <nav>
           <ul className="nav-ul">
             <li>

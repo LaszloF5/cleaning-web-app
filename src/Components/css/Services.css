@@ -92,3 +92,9 @@
     margin-bottom: 10px;
   }
 }
+
+@media screen and (max-width: 470px) {
+  .services-container_items {
+    height: 330px;
+  }
+}

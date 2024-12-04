@@ -11,52 +11,53 @@ export default function Services() {
         </h2>
         <div className="services-container">
           <div className="services-container_items">
-            <img src="" alt="img location" />
+            {/* <img src="" alt="img location" /> */}
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates sed accusantium omnis excepturi nihil dolores esse.
+              Dusting, vacuuming, and mopping. Cleaning bathrooms and kitchens.
+              Emptying trash bins.
             </p>
-            <span>service name 1</span>
+            <span>General Daily/Weekly Cleaning</span>
           </div>
           <div className="services-container_items">
-            <img src="" alt="img location" />
+            {/* <img src="" alt="img location" /> */}
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates sed accusantium omnis excepturi nihil dolores esse.
+              Cleaning windows and shutters. Deep cleaning (e.g., grout,
+              upholstery). Cleaning hard-to-reach areas (e.g., cabinet tops).
             </p>
-            <span>service name 2</span>
+            <span>Deep Cleaning</span>
           </div>
           <div className="services-container_items">
-            <img src="" alt="img location" />
+            {/* <img src="" alt="img location" /> */}
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates sed accusantium omnis excepturi nihil dolores esse.
+              Deep cleaning upholstered furniture. Shampooing and stain removal
+              for carpets.
             </p>
-            <span>service name 3</span>
+            <span>Upholstery and Carpet Cleaning</span>
           </div>
           <div className="services-container_items">
-            <img src="" alt="img location" />
+            {/* <img src="" alt="img location" /> */}
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates sed accusantium omnis excepturi nihil dolores esse.
+              Dusting and disinfecting workstations. Keeping kitchen and
+              restroom areas clean. Careful cleaning around documents and
+              equipment.
             </p>
-            <span>service name 4</span>
+            <span>Common Area Cleaning for Residential Buildings</span>
           </div>
           <div className="services-container_items">
-            <img src="" alt="img location" />
+            {/* <img src="" alt="img location" /> */}
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptates sed accusantium omnis excepturi nihil dolores esse.
             </p>
-            <span>service name 5</span>
+            <span>Office Cleaning for Small Businesses</span>
           </div>
           <div className="services-container_items">
-            <img src="" alt="img place" />
+            {/* <img src="" alt="img place" /> */}
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates sed accusantium omnis excepturi nihil dolores esse.
+              Pre- and post-event cleaning. Cleaning before/after moving.
+              Post-renovation deep cleaning.
             </p>
-            <span>service name 6</span>
+            <span>Occasional or One-Time Cleaning</span>
           </div>
         </div>
       </div>
