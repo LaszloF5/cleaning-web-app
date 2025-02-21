@@ -28,18 +28,8 @@ export default function AboutUs() {
           About <span className="about-us-mainText-lastword ">Us</span>
         </h2>
         <div className="us">
-          <img
-            className="us_img"
-            src={`${process.env.PUBLIC_URL}/us.jpg`}
-            alt="Us"
-          />
           <p className="us_p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-            semper erat, non gravida nisi. Vestibulum ante ipsum primis in
-            faucibus orci luctus et ultrices posuere cubilia Curae; Nullam id
-            enim et arcu viverra consectetur. Duis in nulla vel massa consequat
-            facilisis ac auctor purus. Nulla facilisi. Duis ut rutrum nunc.
-            Nulla facilisi. Donec vel mi at neque consectetur congue.
+          Üdvözöljük! Cégünk professzionális társasház takarítási szolgáltatásokat nyújt Győrben és környékén. Célunk, hogy tiszta és rendezett környezetet teremtsünk, ahol a lakók otthon érezhetik magukat. Szolgáltatásaink magukban foglalják a heti rendszerességű takarítást, amely tartalmazza a felmosást, söprést, portalanítást, pókhálótlanítást és havi rendszerességgel az ablakok tisztítását.
           </p>
         </div>
         <div className="theySaid-container">

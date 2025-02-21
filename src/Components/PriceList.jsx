@@ -21,15 +21,14 @@ export default function PriceList() {
           <tbody className="services-table_body">
             <tr className="services-table_row">
               <td className="services-table_cell name-cell">
-                General Daily/Weekly Cleaning
+                Társasház takarítás
               </td>
               <td className="services-table_cell">
                 <span className="service-price">
-                  $50–$100 per session for private homes (depending on size).
+                  Nagyobb társasházak esetén: 1500ft/lakás/alkalom
                 </span>
                 <span className="service-price">
-                  $100–$200 per session for residential buildings or small
-                  offices.
+                Kisebb társasházak esetén: egyedi árajánlat, melynek alapja 9000 Ft/óra bruttó díj.
                 </span>
               </td>
             </tr>
@@ -111,10 +110,12 @@ export default function PriceList() {
             </tr>
           </tfoot>
         </table>
+        <p>Munkánkra teljes körű garanciát vállalunk. Probléma esetén a bejelentéstől számított 24-48 órán belül reagálunk.</p>
         <div className="other-option-container">
           <p className="other-option-p">
-            {otherOptionText}{" "}
-            <span className="other-option-p_lastword">confidence!</span>
+            {/* {otherOptionText}{" "}
+            <span className="other-option-p_lastword">confidence!</span> */}
+            Egyedi igények esetén, a szolgáltatások bővítése plusz költségekkel járhat, melyeket a felmérés során egyeztetünk.
           </p>
           <button className="contact-button">Contact Us!</button>
         </div>
