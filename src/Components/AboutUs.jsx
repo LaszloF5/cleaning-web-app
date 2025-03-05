@@ -29,8 +29,10 @@ export default function AboutUs() {
         </h2>
         <div className="us">
           <p className="us_p">
-          Üdvözöljük! Cégünk professzionális társasház takarítási szolgáltatásokat nyújt Győrben és környékén. Célunk, hogy tiszta és rendezett környezetet teremtsünk, ahol a lakók otthon érezhetik magukat. Szolgáltatásaink magukban foglalják a heti rendszerességű takarítást, amely tartalmazza a felmosást, söprést, portalanítást, pókhálótlanítást és havi rendszerességgel az ablakok tisztítását.
+          Tudjuk, hogy az otthon és a közös terek tisztasága a nyugalom és a kényelem alapja. Ezért elkötelezettek vagyunk, hogy professzionális és megbízható takarítási szolgáltatásokat nyújtsunk Önnek, legyen szó otthonáról vagy társasházáról Győrben és környékén.
           </p>
+          <p className="us_p">Szakértő csapatunk minden részletre odafigyelve, alaposan és precízen dolgozik, hogy otthona vagy társasháza ne csak ragyogóan tiszta legyen, de kellemes illatokkal is betöltse a teret. Nagy hangsúlyt fektetünk az illatokra, hiszen tudjuk, hogy egy friss és tiszta illat otthonossá teszi a környezetet.</p>
+          <p className="us_p">Segítünk, hogy Önnek több ideje maradjon a fontos dolgokra. Ismerje meg részletes szolgáltatásainkat és kérjen személyre szabott árajánlatot még ma!</p>
         </div>
         <div className="theySaid-container">
           <h3 className="theySaid-container_h3">They said about us</h3>

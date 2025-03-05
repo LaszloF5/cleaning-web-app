@@ -4,7 +4,6 @@ import "../Components/css/Services.css";
 export default function Services() {
   const servicesMainText = `Your Trusted \nCleaning `;
   return (
-    <div className="kesobbModositaniAStrukturat">
       <div className="second-container">
         <h2 className="second-container_h2">
           {servicesMainText} <span className="services-lastWord">Service!</span>
@@ -61,6 +60,5 @@ export default function Services() {
           </div>
         </div>
       </div>
-    </div>
   );
 }

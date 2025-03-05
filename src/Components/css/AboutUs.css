@@ -29,14 +29,14 @@
 
 .us {
   outline: 3px solid black;
-  width: 50%;
+  width: 75%;
   display: flex;
+  flex-direction: column;
   margin-left: 30px;
   border-radius: 8px;
 }
 
-.us_img,
-.us_p {
+.us_img {
   width: 50%;
   margin: auto 0;
 }
